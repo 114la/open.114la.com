@@ -1,0 +1,21 @@
+/* ==========================================================
+	* Copyright (c) 2009, www.114la.com. All rights reserved.
+	* Date:2009/11/5
+	* Author: cai@115.com
+============================================================*/
+body { background:url(images/bg.png) repeat-x #C9DDEE;}
+.bd,#cate h3{ border-color:#B9D4E2;}
+a:hover,#citylist p a  { color:#0E6DBC; }
+
+#cate h3,#catenav ul,#search-menu li.current ,#search-menu li a#smore{ background-image:url(images/page.gif); background-repeat:no-repeat;}
+
+#search-menu li.current { background-position: center -122px;}
+#search-menu li.current a{ background-color:#D6E7F7;  border:1px solid #ace;  border-bottom-color:#DFEEF8;}
+#search-menu li a#smore { background-position:14px -94px; background-color:#fff;}
+li #smp a:hover { background:#D6E7F7}
+
+#guide { background-color:#EAF4FF;}
+#cate h3 { background-repeat:repeat-x;}
+#catenav ul { padding-left:40px; background-position:-6px -35px;}
+#catenav a { color:#0E6DBC}
+

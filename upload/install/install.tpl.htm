@@ -1,0 +1,615 @@
+<!--<?php
+//-----------------------------------------页面头部------------------------------------------------
+print <<<EOT
+-->
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=gb2312" />
+<title>114啦网址导航建站系统-Install</title>
+<link href="css/style.css" rel="stylesheet" type="text/css" />
+</head>
+
+<body>
+<div class="wrap">
+    <div class="container">
+        <div id="install">
+            <div class="top">
+                <div class="version">
+                    <dl>
+                        <dt class="current">当前版本：</dt>
+                        <dd>v1.14</dd>
+                    </dl>
+                </div>
+            </div>
+            <div class="con">
+<!--
+EOT;
+if(empty($step)){
+//-----------------------------------------打印安装协议------------------------------------------------
+if(!$check)
+{
+print <<<EOT
+-->
+            <div class="box3">
+                <div id="error">
+                    <div class="box4">
+                        <img src="images/icon_06.gif" alt="错误" /><br />
+                        <strong class="red">$error_txt</strong><br />
+                        <strong class="black"></strong>
+                    </div>
+                </div>
+            </div>
+<!--
+EOT;
+}
+else
+{
+print <<<EOT
+-->
+<div class="box2">
+                    <div class="box2-top">
+                        <h2>请阅读 114啦网址导航建站系统 安装协议</h2>
+                    </div>
+                    <div class="box2-con">
+                        <div class="agreement">
+        <h3 align="center">114啦网址导航建站系统　安装协议</h3><br>
+<p>感谢您使用114啦网址导航建站系统。希望我们的努力能为您提供一个高效的网址导航建站方案。</p>
+<p>114啦网址导航(www.114la.com)始建于2007年1月15日，本站的宗旨是为网民提供精彩实用的网址大全，减少人们为记忆繁杂网站域名的烦恼；随着用户需求的不断增加，我们也尽所能提供用户需要的各类上网服务，在此感谢一直以来支持本站的朋友们。我们将继续以改善用户体验为根本，为广大网民提供便捷的上网帮助，让大家只要轻轻点击鼠标就能轻松的遨游网络，共享最快最方便的网上冲浪体验。</p>
+<p>114啦网址导航建站系统为广东雨林木风计算机科技有限公司研发，采用PHP+MYSQL开发设计，于2009年6月26日源码开放。 </p>
+
+<p>为了使你正确并合法的使用本程序，请你在使用前务必阅读清楚下面的协议条款：</p>
+
+<p>本授权协议适用且仅适用于　114啦网址导航建站系统V1.14 版本，广东雨林木风科技有限公司拥有对本授权协议的最终解释权。</p>
+
+
+
+<h3>I.  114啦网址导航建站系统许可协议</h3>
+
+<p>您可以在协议规定的约束和限制范围内修改 114啦网址导航建站系统 源代码(如果被提供的话)或界面风格以适应您的网站要求。 </p>
+<p>您拥有使用本软件构建的网站中全部相关信息的所有权，并独立承担与文章内容的相关法律义务。</p>
+
+
+
+<h3>II. 协议规定的约束和限制</h3>
+
+<p>114啦 没有义务为软件提供更新、增强功能、修改、修订或新添功能。</p>
+<p>未经官方许可，不得将本软件用于商业用途（包括但不限于企业网站、经营性网站、以营利为目或实现盈利的网站），以及非法用途。</p>
+<p>无论您的网站是否整体使用 114啦网址导航建站系统 ，还是部份栏目使用 114啦网址导航建站系统，请在您使用了 114啦网址导航建站系统 的网站主页上114啦官方网址(www.114la.com)的链接.</p>
+
+
+<h3>III. 有限担保和免责声明</h3>
+<ol>
+<p>本软件及所附带的文件是作为不提供任何明确的或隐含的赔偿或担保的形式提供的。</p>
+
+<p>用户出于自愿而使用本程序，您必须了解使用本程序的风险，在尚未购买产品技术服务之前，我们不承诺提供任何形式的技术支持、使用担保，也不承担任何因使用本软件而产生问题的相关责任。</p>
+
+</ol>
+
+<p>有关 114啦网址导航建站系统 最终用户授权协议与技术服务的详细内容，均由 114啦网址导航 官方网站独家提供。</p>
+
+<p>电子文本形式的授权协议如同双方书面签署的协议一样，具有完全的和等同的法律效力。您一旦开始确认本协议并安装 114啦网址导航建站系统，即被视为完全理解并接受本协议的各项条款，在享有上述条款授予的权力的同时，受到相关的约束和限制。协议许可范围以外的行为，将直接违反本授权协议并构成侵权，我们有权随时终止授权，责令停止损害，并保留追究相关责任的权力。</p><br /><br /></p>
+                        </div>
+                    </div>
+                    <div class="box2-fot">
+                        <div class="handle">
+                            <form method="post" action='$basename'>
+                                <input type="hidden" name="step" value="1">
+                                <button type="submit" class="button"  name="submit">同&nbsp;&nbsp;意</button> <button type="button" class="button" onclick="javascript: window.close();">拒&nbsp;&nbsp;绝</button>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+<!--
+EOT;
+}
+}elseif($step == 1){
+//-----------------------------------------安装第1步，安装方式选择------------------------------------------------
+print <<<EOT
+-->
+                <div class="box2">
+                    <div class="box2-top">
+                        <h2>请选择适合您的安装方式</h2>
+                    </div>
+                    <div class="box2-con">
+                        <div class="agreement" style="overflow:hidden;">
+                          <ul id="update" >
+                            <li class="update"><a href="?step=2&method=2">从V1.13升级</a></li>
+                            <li class="install"><a href="?step=2&method=1">全新安装</a></li>
+                            </ul>
+
+                        </div>
+                    </div>
+                    <div class="box2-fot">
+
+                </div><!--/ box2-->
+            </div>
+<!--
+EOT;
+}elseif($step == 2){
+//-----------------------------------------安装第2步，输入库配置文件可写检测------------------------------------------------
+print <<<EOT
+-->
+            <div id="step">
+                    <div id="step1">
+                        第一步
+                    </div>
+                    <div class="box3">
+                    <h2>请检查以下文件是否有写权限</h2>
+                    <table>
+<!--
+EOT;
+foreach ($w_check as $key=>$value) {
+print <<<EOT
+-->
+                        <tr>
+                            <th>$value</th>
+                        </tr>
+<!--
+EOT;
+}
+$btn_disabled = !$check ? 'disabled="disabled"' : '';
+print <<<EOT
+-->
+                    </table>
+                    </div><!--/ box3-->
+
+                    <div class="handle">
+                        <form method="post" action='$basename'>
+                            <input type="hidden" name="step" value="3">
+                            <input type="hidden" name="method" value="$method">
+                            <button type="button" onclick='history.go(-1)' class="button">上一步</button> <button type="submit" class="button" $btn_disabled>下一步</button>
+                        </form>
+                </div>
+            </div>
+
+
+
+<!--
+EOT;
+}elseif($step == 3){
+//-----------------------------------------安装第3步，填写配置信息------------------------------------------------
+    if($method == 1)//全新安装
+    {
+        print <<<EOT
+        -->
+            <div id="step">
+                    <div id="step2">
+                        第二步
+                    </div>
+                    <form method="post" action='$basename'>
+                    <div id="database">
+                        <div class="box3">
+                            <h2>填写数据库信息</h2>
+
+
+                            <input type="hidden" name="step" value="4">
+                            <table>
+                                <tr>
+                                    <th width="106">数据库地址：</th>
+                                    <td width="180"><input type="text" class="int" name='dbhost' value='$dbhost' /></td>
+                                    <td>本地127.0.0.1 或 localhost 例如:localhost:6608</td>
+                                </tr>
+                                <tr>
+                                    <th>数据库用户名：</th>
+                                    <td><input type="text" class="int" name='dbuser' value='$dbuser' /></td>
+                                    <td>输入MYSQL登录账号</td>
+                                </tr>
+                                <tr>
+                                    <th>数据库密码：</th>
+                                    <td><input type="password" class="int" name='dbpw' value='$dbpw' /></td>
+                                    <td>输入MYSQL登录密码</td>
+                                </tr>
+                                <tr>
+                                    <th>重复数据库密码：</th>
+                                    <td><input type="password" class="int" name='dbpw_check' value='$dbpw_check' /></td>
+                                    <td>输入MYSQL登录密码</td>
+                                </tr>
+                                <tr>
+                                    <th>数据库名：</th>
+                                    <td><input type="text" class="int" name='dbname' value='$dbname'/></td>
+                                    <td>输入<strong >已存在的</strong>数据库名称</td>
+                                </tr>
+                                <tr>
+                                    <th>数据库编码：</th>
+                                    <td><input type="text" class="int" name='bianma' value='gbk' id="bianma" disabled="disabled" style="background:#EEE"/></td>
+                                    <td>数据库编码gbk, <strong style="color:#F00">修改编码会造成数据无法识别</strong></td>
+                                </tr>
+                                <tr>
+                                    <th>表名前缀：</th>
+                                    <td><input type="text" class="int" name='dbpre' value='$dbpre' /></td>
+                                    <td>数据表默认前缀</td>
+                                </tr>
+                                <tr>
+                                    <th>静态页面目录：</th>
+                                    <td><input type="text" class="int" name='staticfolder' id="staticfolder" value='/html' /></td>
+
+                                    <td>输入 / ,表示根目录</td>
+                                </tr>
+                                <tr>
+                                <td colspan='3'>
+<!--
+EOT;
+               if($error_password==2){
+                    print <<<EOT
+                    -->
+                    <strong class="red">数据库用户名为空或您所输入的2个密码不一致。</stong>
+<!--
+EOT;
+}
+                print <<<EOT
+                -->
+                                </td>
+                                </tr>
+                            </table>
+
+                        </div><!--/ box3-->
+
+                        <div class="box3">
+                            <h2>填写管理员信息</h2>
+                            <div class="m10 red">请牢记管理员信息，凭该账号密码管理站点。</div>
+                            <table>
+                                <tr>
+                                    <th width="106">用 户 名：</th>
+                                    <td width="180"><input type="text" class="int" name='manager' value='$manager' /></td>
+                                    <td>设置超级管理员用户名</td>
+                                </tr>
+                                <tr>
+                                    <th>密　　码：</th>
+                                    <td><input type="password" class="int" name='password'/></td>
+                                    <td>设置超级管理员密码,密码不可为空</td>
+                                </tr>
+                                <tr>
+                                    <th>重复密码：</th>
+                                    <td><input type="password" class="int" name='password_check'/></td>
+                                    <td>请重复一遍你的超级管理员密码</td>
+                                </tr>
+                                <tr>
+                                <td colspan='3'>
+<!--
+EOT;
+               if($error_password==1){
+                    print <<<EOT
+                    -->
+                    <strong class="red">用户名密码为空或您所输入的2个密码不一致。</stong>
+<!--
+EOT;
+}
+                print <<<EOT
+                -->
+                                </td>
+                                </tr>
+                            </table>
+                        </div><!--/ box3-->
+
+                    </div>
+
+                <div class="handle">
+                    <input type="hidden" name="step" value="4">
+                    <input type="hidden" name="method" value="$method">
+                    <button type="button" onclick='history.go(-1)' class="button">上一步</button> <button type="submit" class="button">下一步</button>
+                </div>
+                </form>
+            </div>
+<!--
+EOT;
+    }
+    elseif($method == 2)//升级
+    {
+        print <<<EOT
+        -->
+            <div id="step">
+                    <div id="step2">
+                        第二步
+                    </div>
+                    <form method="post" action='$basename'>
+                    <div id="database">
+
+              <div class="box3">
+                            <h2>确认 旧版本 信息</h2>
+                            <input type="hidden" name="step" value="4">
+                      <table>
+                        <tr>
+                          <th>旧版本备份目录：</th>
+                          <td><input name='source' type="text" class="int" id="source" value='/old114la' disabled="disabled" style="background:#EEE" />
+                          <input name="source" type="hidden" id="source" value="/old114la" /></td>
+                          <td style="line-height:15px;"> 安装前,请将<strong style="color:#F00">旧版</strong>本移动至old114la文件夹</td>
+                        </tr>
+                                <tr>
+                                    <th width="106">数据库地址：</th>
+                                    <td width="180"><input type="text" class="int" name='dbhost' value='$dbhost' disabled="disabled" /></td>
+                                    <td>&nbsp;</td>
+                                </tr>
+                                <tr>
+                                    <th>数据库用户名：</th>
+                                    <td><input type="text" class="int" name='dbuser' value='$dbuser' disabled="disabled" /></td>
+                                    <td>&nbsp;</td>
+                                </tr>
+                                <tr>
+                                    <th>数据库密码：</th>
+                                    <td><input type="text" class="int" name='dbpw' value='$dbpw' disabled="disabled" /></td>
+                                    <td>&nbsp;</td>
+                                </tr>
+                                <tr>
+                                  <th>数据库名：</th>
+                                  <td><input type="text" class="int" name='dbname' value='$dbname' disabled="disabled"/></td>
+                                  <td>&nbsp;</td>
+                                </tr>
+                                <tr>
+                                <th>数据库编码：</th>
+                                    <td><input type="text" class="int" name='bianma' value='gbk' id="bianma" disabled="disabled" style="background:#EEE"/></td>
+                                    <td>&nbsp;</td>
+                                </tr>
+                                <tr>
+                                    <th>表名前缀：</th>
+                                    <td><input type="text" class="int" name='dbpre' value='$dbpre' disabled="disabled" /></td>
+                                    <td>&nbsp;</td>
+                                </tr>
+                                <tr>
+                                    <th>静态页面目录：</th>
+                                    <td><input type="text" class="int" name='staticfolder' id="staticfolder" value='$staticfolder' disabled="disabled"  /></td>
+                                    <td>&nbsp;</td>
+                                </tr>
+                            </table>
+
+                        </div><!--/ box3-->
+                    </div>
+
+                <div class="handle">
+                    <input type="hidden" name="step" value="4">
+                    <input type="hidden" name="method" value="$method">
+                    <button type="button" onclick='history.go(-1)' class="button">上一步</button> <button type="submit" class="button">下一步</button>
+                </div>
+                </form>
+            </div>
+<!--
+EOT;
+    }
+
+}elseif($step == 4){
+//-----------------------------------------安装第4步，详细目录权限检测------------------------------------------------
+    print <<<EOT
+    -->
+        <div id="step">
+            <div id="step2">
+                第二步                   ----
+            </div>
+            <div id="importsql">
+<!--
+EOT;
+if($check)
+{
+    print <<<EOT
+    -->
+                <textarea style="height:80px; width:630px; margin: 0 auto; overflow:hidden; overflow-y: scroll;">
+                    数据库配置资料写入完成 √
+                    创始人资料写入完成 √
+                </textarea>
+<!--
+EOT;
+}
+    print <<<EOT
+    -->
+            </div>
+            <br />
+<!--
+EOT;
+   if(!empty($error_database)) {
+        print <<<EOT
+        -->
+            <div class="box3">
+                <div id="error">
+                    <div class="box4">
+                        <img src="images/icon_06.gif" alt="错误" /><br />
+                        <strong class="red">数据库升级文件update.sql,请下载官方版.</strong><br />
+                        <strong class="black">请返回修改。</strong>
+                    </div>
+                </div>
+            </div>
+<!--
+EOT;
+   }elseif($error_password==1){
+        print <<<EOT
+        -->
+            <div class="box3">
+                <div id="error">
+                    <div class="box4">
+                        <img src="images/icon_06.gif" alt="错误" /><br />
+                        <strong class="red">用户名密码为空或您所输入的2个密码不一致。</strong><br />
+                        <strong class="black">请返回修改。</strong>
+                    </div>
+                </div>
+            </div>
+<!--
+EOT;
+   }elseif($error_password==2){
+        print <<<EOT
+        -->
+            <div class="box3">
+                <div id="error">
+                    <div class="box4">
+                        <img src="images/icon_06.gif" alt="错误" /><br />
+                        <strong class="red">数据库用户名密码为空或您所输入的2个密码不一致。</strong><br />
+                        <strong class="black">请返回修改。</strong>
+                    </div>
+                </div>
+            </div>
+<!--
+EOT;
+   }else {
+        print <<<EOT
+        -->
+          <div class="box3">
+            <h2>系统文件权限检测</h2>
+          <table>
+                  <tr>
+                      <th width="455">目 录 名</th>
+                      <td width="147"><span style="color:#07519A; font-weight:bold;">状 态</span></td>
+                  </tr>
+<!--
+EOT;
+        $report_txt = array(
+            1 => '<span style="color:#0C6; font-weight:bold;">&radic; 可写</span>',
+            2 => '<span style="color:#F00; font-weight:bold;">X 不可写</span>',
+            3 => '<span style="color:#F00; font-weight:bold;">X 不存在</span>',
+        );
+
+        foreach($file_check_report as $report){
+            print <<<EOT
+            -->
+                  <tr>
+                      <th>$report[0]&nbsp;</th>
+                      <td>{$report_txt[$report[1]]}</td>
+                  </tr>
+<!--
+EOT;
+        }
+
+        print <<<EOT
+        -->
+            </table>
+            <div style="border-bottom:1px solid #DFECF7;"></div>
+<!--
+EOT;
+        if($file_check_error){
+            print <<<EOT
+            -->
+            <div id="error">
+                    <div class="box4">
+                        <img src="images/icon_06.gif" alt="错误" /><br />
+                        <strong class="red">文件权限设置错误。</strong><br />
+                        <strong class="black">请根据提示做对应修改，然后刷新此页面。</strong>
+                    </div>
+                </div>
+          </div>
+<!--
+EOT;
+        }
+    }
+    $btn_disabled = !$check ? 'disabled="disabled"' : '';
+    print <<<EOT
+    -->
+            <div class="handle">
+                <form method="post" action='$basename'>
+                    <input type="hidden" name="step" value="5">
+                    <input type="hidden" name="method" value="$method">
+                    <button type="button" onclick='history.go(-1)' class="button">上一步</button> <button type="submit" class="button" $btn_disabled>下一步</button>
+                </form>
+            </div>
+        </div>
+<!--
+EOT;
+}elseif($step == 5){
+//-----------------------------------------安装第5步，数据导入操作------------------------------------------------
+    print <<<EOT
+    -->
+        <div id="step">
+            <div id="step3">
+                第三步
+            </div>
+<!--
+EOT;
+        if($error){
+            print <<<EOT
+            -->
+            <div class="box3">
+            <div id="error">
+                    <div class="box4">
+                        <img src="images/icon_06.gif" alt="错误" /><br />
+                        <strong class="red">$error_txt</strong><br />
+                        <strong class="black">请根据提示做对应处理，然后重试。</strong>
+                    </div>
+                </div>
+          </div>
+<!--
+EOT;
+        } else {
+            print <<<EOT
+            -->
+            <div id="importsql">
+                <textarea style="height:200px; width:630px; margin: 0 auto; overflow:hidden; overflow-y: scroll;">
+    正在导入数据库 ……\n
+    $installinfo
+                </textarea>
+            </div>
+<!--
+EOT;
+}
+    $btn_disabled = $error ? 'disabled="disabled"' : '';
+    print <<<EOT
+    -->
+            <div class="handle">
+                <form method="post" action='$basename'>
+                    <input type="hidden" name="step" value="6">
+                    <input type="hidden" name="method" value="$method">
+                    <button type="button" class="button" onclick='history.go(-1)'>上一步</button> <button type="submit" class="button" $btn_disabled>下一步</button>
+                </form>
+            </div>
+        </div>
+<!--
+EOT;
+}elseif($step == 6){
+//-----------------------------------------安装第6步，安装目录删除------------------------------------------------
+print <<<EOT
+-->
+        <div id="step">
+            <div id="step4">
+                第四步
+            </div>
+            <div class="box3">
+                <div id="error">
+                    <div class="box4">
+                        <img src="images/icon_04.gif" alt="成功" /><br />
+                        <strong class="black">成功安装114啦网址导航，点击 <font color="Red">下一步：自动删除安装目录</font>，并进入管理后台。
+                    </div>
+                </div>
+            </div>
+            <div class="handle">
+                <form method="post" action='$basename'>
+                <input type="hidden" name="step" value="7">
+                    <input type="hidden" name="method" value="$method">
+                <button type="button" class="button" onclick='history.go(-1)'>上一步</button> <button type="submit" class="button">下一步</button>
+                </form>
+            </div>
+        </div>
+<!--
+EOT;
+}elseif($step == 7){
+//-----------------安装第7步（如果自动删除失败），提示删除手动安装目录------------------------------------
+print <<<EOT
+-->
+        <div id="step">
+            <div id="step4">
+                第四步
+            </div>
+            <div class="box3">
+                <div id="error">
+                    <div class="box4">
+                        <img src="images/icon_06.gif" alt="错误" /><br />
+                        <strong class="red">自动删除安装目录失败！</strong><br />
+                        <strong class="black">为安全起见，请手动删除PATH_INSTALL目录！</strong>
+                    </div>
+                </div>
+            </div>
+            
+            <div style="text-align:center">
+            <strong><a href="../admin/index.php">进入管理员登陆后台</a></strong></div>
+            
+        </div>
+<!--
+EOT;
+}
+//-----------------------------------------页面底部------------------------------------------------
+print <<<EOT
+-->
+                <div class="copyright">Copyright &copy; 2005-2010 114啦网址导航(114la.com). All Rights Reserved. </div>
+            </div>
+            <div class="fot"></div>
+        </div><!--/ install-->
+    </div><!--/ container-->
+</div><!--/ wrap-->
+</body>
+</html>
+<!--
+EOT;
+?>-->

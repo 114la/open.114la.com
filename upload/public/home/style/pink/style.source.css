@@ -1,0 +1,18 @@
+@charset "gb2312";
+body { background-color:#F0A8D7;}
+#wrap { background-color:#fff;}
+#skinlist a.blue { background-position:-59px -322px;}
+#skinlist a.green { background-position:-71px -322px;}
+#skinlist a.pink { background-position:-83px -334px;}
+#logo ,#logo a{ height:69px; width:117px; overflow:hidden;}
+#logo a { display:block; text-indent:-9999px; background:url(images/logo.gif) no-repeat;}
+#bm ul,#bm li,.sf,.sw,.rc-tp, .rc-tp b, .rc-bt, .rc-bt b, #ex a,#set li,#sm li ,#q_int,#qs b,.sf .l,.sf .r,.tg-ms,#cal .clock,#qs-btn,#skinlist a,#topsite em,.setting a,#settingBox .h2,#cate ul#tool-tab,#tool-tab li,.tsbox .arrow,#q_int .button-wrap{ background-image:url(images/images.gif?v2);}
+#sb,#header .box,#top,#q_int{ background-image:url(images/repeat.gif);}
+.box ,#tool-tab,#tool-tab li.active,#top,#bm ul,#footer .hr,#topsite .tsbox,#settingBox,#tool{ border-color:#F79DBF;}
+#tool-tab,#fs .box { background-color:#FEE4EE;}
+#cate h2,#tool-tab,.plane .int_b,.plane .int,#bm li,.tool-title a,#suggest .close a,#cal .date a, #tool-tab li,#hot2 a   { color:#c28;}
+#ls dl.alt { background-color:#FEF3F8;}
+#cate { background:#FFF8FC}
+/*hover*/
+#fm a:hover,#meta a:hover,#cate a:hover,#ls a:hover,#ms a:hover,#footer .link a:hover,#qs-result a:hover,#hot a:hover,#suggest li.hover,#suggest .close a:hover { background-color:#D03570; color:#fff;}
+#q_int { border-color:#F3CAE1;}

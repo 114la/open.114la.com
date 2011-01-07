@@ -1,0 +1,81 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=gb2312" />
+<title>114啦网址导航 - 浏览记录</title>
+<script type="text/javascript" src="../../home/js/base.js"></script>
+<style type="text/css">
+body,ul,li{ margin:0; padding:0;}
+ul,li { list-style:none;}
+a { color:#000; text-decoration:none; cursor:pointer;}
+a:hover { background:#36c; color:#fff;}
+body { font-family:Arial, Helvetica, sans-serif; font-size:14px;}
+#history {background:url(images/topsite_bg.gif);margin:0 4px; height:300px;}
+#history li{  float:left; width:19.8%; overflow:hidden; height:30px; line-height:30px; text-align:center;}
+#history li.none{ width:100%; color:#666; text-align: center;}
+#history li.del { width:100%; text-align:right; padding-right:2px;}
+#delHistory { background:url(images/del.gif) no-repeat 0 2px; padding:2px; padding-left:20px; color:#666; cursor:pointer;}
+a#delHistory:hover { color:#f00; text-decoration:underline;}
+</style>
+</head>
+
+<body>
+<div id="history" class="line_30">
+  <ul id="historyBox" class="clearfix">
+    <li class="none">对不起，您没有任何浏览记录</li>
+  </ul>
+  <ul class="clearfix">
+    <li class="del"><a id="delHistory" href="javascript:void(0)" onclick="History.remove();">删除记录</a></li>
+  </ul>
+</div>
+
+
+<script type="text/javascript">
+
+var History = (function(){
+	function show(){
+		try {
+			var data = Cookie.get("history"),
+			template = '<li><a href="#{url}" title="#{content}" target="_blank">#{content}</a></li>',
+			content = "";
+//alert(data);
+			if (data) {
+				var history_arg = data.split("_[YLMF]_");
+				history_arg.pop();
+				history_arg.forEach(function(element,index){
+					 
+					var a = element.split("+");
+					if(a!=="" && index<45){
+						content += format(template,{
+							url:a[0],
+							content:a[1]
+						})
+					}
+				
+				});
+				$("#historyBox").el.innerHTML = content;
+			} else {
+				$("#historyBox").el.innerHTML = '<li class="none">对不起，您没有任何浏览记录</li>';
+			}
+		} catch(e) {}
+	};
+	function clear(){
+		
+		clean = confirm("确定要清除所有的浏览记录？") ;
+		if (clean) {
+			Cookie.clear("history");
+			$("#historyBox").el.innerHTML = '<li class="none">对不起，您没有任何浏览记录</li>';
+		}
+
+	}
+	return{
+		show: show,
+		remove: clear
+	}
+	
+})(); 
+
+History.show();
+</script>
+</body>
+</html>

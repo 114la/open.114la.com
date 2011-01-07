@@ -1,0 +1,4 @@
+@charset "gb2312";
+#font-setting a.pink {width:16px; height:16px; margin-top:7px;}
+a { color:#CB35A9;}
+#cate a:hover ,#location a:hover{ background-color:#CB35A9;}

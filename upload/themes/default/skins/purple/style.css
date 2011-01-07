@@ -1,0 +1,81 @@
+/* ==========================================================
+	* Copyright (c) 2009, www.114la.com. All rights reserved.
+	* Date:2009/11/5
+	* Author: cai@115.com
+============================================================*/
+body { background:url(images/bg.gif) repeat-x #F3D5F0; color:#3D464B}
+.theme a.purple{ background-position:-20px -168px;}
+#bg-item a.default { background-color:#8E4DA4}
+#font-setting a.default { background-color:#3D464B}
+.bd,#board-menu li,#coolsite h2,#tool h2,#tool h2 span,#fmsite li ul, #footer .hr,#weatherBox .head{ border-color:#BA8DCA;}
+
+
+a { color:#3D464B; text-decoration:none;}
+a:hover { color:#f00; text-decoration:underline;}
+
+#search-form .btn {background:none;}
+#header,#top,#board-menu li,#coolsite h2,#setting-box,#tool h2,#weatherBox,#weatherBox .head,.alertbox,
+.repeat { background-image:url(images/repeat.gif); background-repeat:repeat-x;}
+
+li.setSkin a,#search-menu li.current,#clalign,
+a#smore ,.fmbox,.arrow,.button ,#setting-box h2,#search-form .btn,#weatherBox .close,#closeClock,
+.images { background-image:url(images/images.gif); background-repeat:no-repeat;}
+
+#logo a { display:block; text-indent:-9999px; overflow:hidden; background:url(images/logo.gif) no-repeat;}
+
+#tool a,#tool h2,h2,#board-menu a,#search-menu li.current a,.button,#coolsite dt a ,#clockBox em,#weather a.red  { color:#823A9C;}
+
+#top li.setSkin{ }
+#top li.setSkin a {height:21px; background-position:-1px 0; width:75px; overflow:hidden; text-indent:-9999px; margin-top:1px; display:block;}
+#header { background-position:0 -45px;}
+
+
+#search-form { background:url(images/se_bg.gif) repeat-x #9B4E9F;border:1px solid #853C9C;}
+#search-form .search-bg { background:url(images/search_bg.gif) no-repeat 0 0; overflow:hidden;}
+#search-form .con {  border:1px solid #C090C3; background:none; background:url(images/search_bg_r.gif) no-repeat right 0;}
+#search-form .input { border-color:#853C9C;}
+#search-form .btn { border:none; color:#fff; font-weight:bold;  background-position:-50px -210px;}
+
+#search-menu li.current { background-position: center -124px;}
+#search-menu li.current a{ border:none; background:none; color:#fff;}
+#search-menu li a#smore { background-position:-118px -99px; background-color:#fff;}
+li #smp a:hover { background:#DEA1F2}
+.search-word a { color:#fff;}
+
+#lsBox a {color:#003CF4}
+
+
+#cate { background:#F3ECF6;}
+#cate a:hover { text-decoration:none; background-color:#823A9C; color:#fff; }
+
+#board-menu li,#coolsite h2 { background-position:0 -137px;}
+#board-menu li.current { background-position:0 -179px;}
+
+#coolsite dt { border-right:1px solid #fff;  font-weight:bold;}
+#coolsite dl.alt { border-bottom:1px solid #FCE8FF;background-color:#FCE8FF;}
+#coolsite dl:hover,#coolsite dl.iehover {background-color:#E0A7F3; border-color:#BA8DCA;}
+#clalign.l { background-position:-17px -227px;}
+#clalign { background-position:-1px -227px;}
+
+#board-box ul, .line_30 { background:url(images/topsite_bg.gif)}
+.arrow { width:8px; height:4px; overflow:hidden; text-indent:-999px; display:block; background-position: -1px  -104px; }
+#fmsite .arrow {top:-4px; position:absolute; right:11px}
+.fmbox { background-position:80px - 104px; background-color:#ccc;}
+#fmsite li ul a:hover { background-color:#DEA1F2; color:#823A9C;}
+
+#addColl {background-color:#EDFBD8;}
+#addColl .int {border:1px solid #9BCB50;}
+#addColl input.n {background:#FFFCEC; border-color:#4B710D;}
+#addColl input.e {border-color:#FF0000; background-color:#FBE3E4;}
+
+
+#tool ul {background:url(images/tools_bg.gif) left top;}
+#tool h2{ background-color:#FFFFFF; background-position: 0 -137px;}
+
+#location li { background-color:#F3ECF6;} 
+#location a, #location strong {color:#823A9C;}
+#location a:hover { background-color:#823A9C; color:#fff;}
+
+.button { background-position:-1px -49px;}
+#setting-box,.alertbox {background-color:#F6E6FA;}
+#setting-box h2 { background-position:-90px 0;}

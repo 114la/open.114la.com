@@ -1,0 +1,79 @@
+body, div, dl, dt, dd, ul, ol, li, h1, h2, h3, h4, h5, h6, pre, code, form, fieldset, legend, input, button, textarea, p, blockquote, th, td {margin:0;padding:0;}
+table {	border-collapse:collapse;border-spacing:0;}
+li {list-style:none;}
+input, button, textarea, select, optgroup, option {	font-family:inherit;font-size:inherit;	font-style:inherit;	font-weight:inherit;}
+body { font: 12px/1.5 Tahoma, sans-serif; background:#D9E6F7; }
+body { color:#07519A;}
+a { color:#0E6DBC;}
+a:hover { color:#f00; text-decoration:underline;}
+/*clearfix*/
+.clearfix {zoom: 1;}
+.clearfix:after {content: "\0020"; display: block; clear: both;height:0; }
+.text-center { text-align: center;}
+button.button { background-position:0 -130px; border:0; height:30px; cursor:pointer; color:#fff; display:block; overflow:hidden; width:75px; text-align:center; line-height:30px;}
+.gray { color:#5B5B5B;}
+.red {color:#C80000;}
+.black { color:#000}
+.m10 { margin:10px;}
+
+#install .top ,#install .fot, #step1,#step2,#step3,#step4{ background-image:url(../images/step.gif); background-repeat:no-repeat;}
+.version dl,button.button ,.ok ,.fail{background-image:url(../images/icons.gif); background-repeat:no-repeat;}
+
+ p{text-indent: 2em;}
+
+
+h2 { font-size:12px}
+
+
+#install { width:659px; margin:20px auto 0;}
+#install .top,#install .fot{ height:87px; width:659px; overflow:hidden; background-position:-1px -74px;}
+#install .fot { height:13px; background-position:0 -51px;}
+#install .con{  background:url(../images/box_bg.gif) repeat-y; width:659px;}
+.version { color:#000;}
+.version dt,.version dd{ float:left; height:30px; line-height:30px;}
+.version dd { margin-right:8px;}
+.version dl { height:30px; float:right; background-position:0 -83px;padding-left:22px; }
+
+.box2 { width:631px; margin: 0 auto; }
+.box2-top,.box2-fot { overflow:hidden; background-image:url(../images/box_2.gif); background-repeat:no-repeat; background-position:0 0; height:50px;}
+.box2-top h2 { padding-left:10px; line-height:50px;}
+.box2-fot{ height:80px; background-position:0 -40px;}
+.handle { float:right; margin-top:10px; }
+.handle button.button{ float:left; margin:0 10px;}
+.box2-con { background:url(../images/box2_bg.gif) repeat-y; overflow:hidden}
+.agreement { height:300px; margin:0 10px; padding:10px; overflow-y:scroll; border:1px solid #ccc; background:#fff;}
+.agreement h2 { text-align:center; line-height:30px;}
+.agreement p{ margin-bottom:15px;}
+.copyright { text-align:center; color:#666; clear:both; padding:10px;}
+
+#step { width:631px; margin:0 auto; overflow:hidden;}
+#step1,#step2,#step3,#step4 { height:89px; width:631px; overflow:hidden; text-indent:-9999px; background-position:0 -174px; margin:0 auto;}
+#step2 { background-position:0 -267px;}
+#step3 { background-position:0 -360px;}
+#step4 { background-position:0 -461px;}
+
+.box3 { border:1px solid #AACBE4; margin-bottom:5px;}
+.box3 h2 { color:#000; border-bottom:1px solid #DFECF7; height:26px; line-height:26px; padding-left:15px;}
+.box3 table{ width:608px; margin: 10px auto;}
+.box3 th,.box3 td {height:30px; line-height:30px; text-align:left;}
+.box3 td { color:#5B5B5B; }
+
+.box4{ padding:20px; text-align:center;}
+.box4 img { margin-bottom:15px;}
+
+
+.ok,.fail{ float:left; height:30px; width:20px; background-position: 0 -37px;}
+.fail{ background-position:0 9px;}
+.int { width:160px; padding:2px; font-size:12px; font-family:Verdana, Geneva, sans-serif; color:#666; border:1px solid #ccc;}
+#update { width:500px; margin: 80px auto 0; font-size:14px;}
+#update li { float:left;  height:98px; width:225px; background-image:url(../images/update.gif); background-repeat: no-repeat;}
+#update li.install { background-position:-225px 0; margin-left:50px; }
+#update li a { display:block; height:62px; color:#1666AE; text-decoration:none; line-height:62px; text-align:center; font-weight:bold;}
+#update li a:hover { color:#FC8801}
+
+#link { width:225px; margin:50px auto;}
+#link li{ font-size:16px; background:url(../images/btn_02.gif) no-repeat; text-align:center; height: 65px; width:225px; line-height:40px; position:relative;}
+#link li a {text-decoration:none; color:#0E6DBC;}
+#link li a:hover {  font-weight:bold;}
+
+#link li span { width:18px; height:18px; position:absolute; left:10px; top:12px;}

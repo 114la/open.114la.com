@@ -1,0 +1,34 @@
+/* ==========================================================
+	* Copyright (c) 2009, www.114la.com. All rights reserved.
+	* Date:2009/11/5
+	* Author: cai@115.com
+============================================================*/
+body { background:url(images/bg.gif) repeat-x #C4DF92;}
+.bd,#cate h3{ border-color:#9BCB50;}
+a:hover,#citylist p a,#catenav a   { color:#4B710D; }
+#logo a { display:block; height:69px; width:117px; text-indent:-9999px; overflow:hidden; background:url(images/logo.gif) no-repeat;}
+
+#cate h3,#catenav ul{ background-image:url(images/page.gif); background-repeat:no-repeat;}
+#search-form .btn {background:none;}
+#search-menu li.current,a#smore ,#search-form .btn,
+.images { background-image:url(images/images.gif); background-repeat:no-repeat;}
+
+
+#search-form { background-image:url(images/repeat.gif); background-position:0 -471px; border:1px solid #79B915;}
+#search-form .search-bg { background:url(images/search_bg.gif) no-repeat 0 0; overflow:hidden; _height:42px;}
+#search-form .con {  border:1px solid #C2DEA6; background:none; background:url(images/search_bg.gif) no-repeat right -48px;}
+#search-form .input { border-color:#9BCB50;}
+#search-form .btn { border:none; color:#fff; font-weight:bold;  background-position:-50px -210px;}
+.search-word a { color:#fff;}
+
+#search-menu li.current { background-position: center -124px;}
+#search-menu li.current a{ border:none; background:none; color:#fff;}
+#search-menu li a#smore { background-position:-118px -99px; background-color:#fff;}
+li #smp a:hover { background:#B4D87C}
+
+
+#guide { background-color:#E4F3C5;}
+#cate h3 { background-repeat:repeat-x;}
+#catenav ul { padding-left:40px; background-position:-6px -35px;}
+
+

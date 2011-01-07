@@ -1,0 +1,46 @@
+@charset "utf-8";
+body,p,div,ul,li,form,h1 { margin:0; padding:0;}
+span{margin-left:10px;}
+li { list-style:none;}
+
+body { font:12px/1.5 Verdana, Geneva, sans-serif; background:#D9E6F7}
+.wrap {margin:0 auto;}
+.container { margin:0 auto; width:960px; position:relative;}
+#header { background:url(headbg.gif) repeat-x; height:73px;}
+h1.logo {width:278px; overflow:hidden; position:absolute; top:5px; left:0;  text-align:center;}
+h1.logo a { background:url(logo.gif) no-repeat;  display:block;width:278px; height:57px; overflow:hidden; text-indent:-9999px;}
+#menu { position:absolute; right:0; top:21px;}
+#menu li{ font-size:14px; color:#333; display:inline; margin:0 15px; height:31px; line-height:31px; position:relative;}
+#menu a { color:#6E6E6E; text-decoration:none; font-weight:bold;}
+#menu a:hover{ color:#1766AF; text-decoration:underline}
+.current-site { width:17px; height:11px; overflow:hidden; position:absolute; text-indent:-9999px;  background:url(current_ico.gif) no-repeat; top:34px; left:50%; margin-left:-6px;}
+
+#feedbackbox { width:660px; margin:2em auto;color:#0E6DBC;}
+#feedbackbox h2 { padding:10px;color:#FFFFFF; text-align:left; font-size:12px; margin-right:3px; margin-left:1px; font-weight:normal;background-color:#1766AF;}
+#feedbackbox .con{ width:620px; padding:20px; clear:both; background:url(box_con.gif) repeat-y;}
+.box-top,.box-fot{ height:9px; width:660px; overflow:hidden; background:url(box_top.gif) -1px 0 no-repeat;}
+.box-fot{background:url(box_bot.gif) -1px 0 no-repeat;}
+#feedbackbox ul { padding:10px;}
+#feedbackbox ul:hover,#feedbackbox ul.hover { background-color:#D1E4FF;} 
+
+label { font-size:14px; font-weight:bold;  cursor:pointer;}
+input.int,textarea.int { border:1px solid #AEAEAE; padding:5px 3px; font-size:14px; font-family:Verdana, Geneva, sans-serif;}
+input.int{ width:240px; margin-top:5px;}
+textarea.int { width:590px; height:180px;}
+input.btn { background:none; padding:0; height:28px; line-height:28px; width:85px; border:1px solid #1663AE; background:url(btn_bg.gif) repeat-x;color:#0E6DBC; font-weight:bold; cursor:pointer;}
+
+.form-fot { margin:10px;}
+#feedbackbox ul.safecode:hover { background:none; }
+.safecode img { position:relative;}
+.safecode a{  color:#333;}
+
+#msgbox { color:#318207; padding-left:10px;}
+#spareNumberBox { text-align:right; margin:5px 0;}
+#spareNumberBox span { color:#f00; font-weight:bold;}
+
+#messageBox { height:30px; line-height:30px; padding-left:10px; color:#F00;}
+#messageBox .success { color:#090;}
+
+#footer { text-align:center; color:#0E6DBC; padding-bottom:2em;}
+#footer .link,#footer a { color:#333;}
+

@@ -1,0 +1,195 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=gb2312" />
+<title></title>
+<link href="static/css/style.css" rel="stylesheet" type="text/css" />
+<script type="text/javascript" src="static/js/jquery-1.3.2.min.js"></script>
+<script type="text/javascript" src="static/js/common.js"></script>
+</head>
+<body id="main_page">
+		<div id="nav" style="display:none;">
+		<dl>
+		<dt>当前位置：</dt>
+		    <dd class="link"><a href="#">首页管理</a></dd><!--导航-->
+		    <dd>专题管理</dd><!--导航-->
+		</dl>
+		</div>
+
+<!--<script type="text/javascript">
+
+	var nav = document.getElementById("nav");
+	var pnav = window.parent.document.getElementById("nav")
+	pnav.innerHTML = nav.innerHTML;
+
+</script>-->
+
+<div class="wrap">
+    <div class="container">
+
+        <div id="main">
+            
+            <div class="con">
+            	<form action='?c=class&a=index&type=&classid=' method='post'>
+                  <div class="table">
+                  	<div class="th">
+                    	<div class="form">
+                        <div class="fl">
+                           <input type="button" onclick="window.location='?c=class&a=add'" value="添加分类" />
+                              &nbsp;&nbsp;&nbsp;&nbsp;
+                        </div>
+                        <div id="classSearch" class="fl ml5" style="_margin-top:-6px;">
+                            <input type="text" id="tool_kw" autocomplete="off" onclick="(this.value == '快速搜索分类') ? this.value='' :''" onblur="(this.value == '') ? this.value='快速搜索分类' :''" onmouseover="this.select()" value="快速搜索分类" class="textinput gray9 w270 mt5" />
+                        </div>
+                        </div>
+                    </div>
+                    <table class="admin-tb">
+                    <tr>
+                    	<th width="41" class="text-center">选择</th>
+                    	<th width="97">排序</th>
+                        <th width="248">分类名称</th>
+                        <th width="300">生成目录名称 / 外链地址</th>
+                    	<th width="100">站点数量</th>
+                        <th width="161">操作</th>
+                    </tr>
+
+                                        <tr>
+                    <td class="text-center"><input name="rmid[1]" type="checkbox" rel="del"  /></td>
+                    <td><input name="order[]" type="text" id="order[]" class="textinput" tabindex="11" value="1" size="4" />
+                   <input name="orderid[]" type="hidden" id="orderid[]" value="1" /></td>
+                    <td>娱乐休闲</td>
+                    <td><input name="path[1]" type="text" class="textinput" style="width: 200px;" id="path[1]" value="" /></td>
+                    <td>0</td>
+                    <td>[<a href="?c=class&a=edit&id=1&type=&classid=&path=">修改</a>] </td>
+                    </tr>
+                                        <tr>
+                    <td class="text-center"><input name="rmid[2]" type="checkbox" rel="del"  /></td>
+                    <td><input name="order[]" type="text" id="order[]" class="textinput" tabindex="11" value="2" size="4" />
+                   <input name="orderid[]" type="hidden" id="orderid[]" value="2" /></td>
+                    <td>生活服务</td>
+                    <td><input name="path[2]" type="text" class="textinput" style="width: 200px;" id="path[2]" value="" /></td>
+                    <td>0</td>
+                    <td>[<a href="?c=class&a=edit&id=2&type=&classid=&path=">修改</a>] </td>
+                    </tr>
+                                        <tr>
+                    <td class="text-center"><input name="rmid[4]" type="checkbox" rel="del"  /></td>
+                    <td><input name="order[]" type="text" id="order[]" class="textinput" tabindex="11" value="3" size="4" />
+                   <input name="orderid[]" type="hidden" id="orderid[]" value="4" /></td>
+                    <td>电脑网络</td>
+                    <td><input name="path[4]" type="text" class="textinput" style="width: 200px;" id="path[4]" value="" /></td>
+                    <td>0</td>
+                    <td>[<a href="?c=class&a=edit&id=4&type=&classid=&path=">修改</a>] </td>
+                    </tr>
+                                        <tr>
+                    <td class="text-center"><input name="rmid[3]" type="checkbox" rel="del"  /></td>
+                    <td><input name="order[]" type="text" id="order[]" class="textinput" tabindex="11" value="4" size="4" />
+                   <input name="orderid[]" type="hidden" id="orderid[]" value="3" /></td>
+                    <td>文化教育</td>
+                    <td><input name="path[3]" type="text" class="textinput" style="width: 200px;" id="path[3]" value="" /></td>
+                    <td>0</td>
+                    <td>[<a href="?c=class&a=edit&id=3&type=&classid=&path=">修改</a>] </td>
+                    </tr>
+                                        <tr>
+                    <td class="text-center"><input name="rmid[2226]" type="checkbox" rel="del"  /></td>
+                    <td><input name="order[]" type="text" id="order[]" class="textinput" tabindex="11" value="5" size="4" />
+                   <input name="orderid[]" type="hidden" id="orderid[]" value="2226" /></td>
+                    <td>其他类别</td>
+                    <td><input name="path[2226]" type="text" class="textinput" style="width: 200px;" id="path[2226]" value="" /></td>
+                    <td>0</td>
+                    <td>[<a href="?c=class&a=edit&id=2226&type=&classid=&path=">修改</a>] </td>
+                    </tr>
+                                        <tr>
+                    <td class="text-center"><input name="rmid[5]" type="checkbox" rel="del"  /></td>
+                    <td><input name="order[]" type="text" id="order[]" class="textinput" tabindex="11" value="6" size="4" />
+                   <input name="orderid[]" type="hidden" id="orderid[]" value="5" /></td>
+                    <td>行业部门</td>
+                    <td><input name="path[5]" type="text" class="textinput" style="width: 200px;" id="path[5]" value="" /></td>
+                    <td>0</td>
+                    <td>[<a href="?c=class&a=edit&id=5&type=&classid=&path=">修改</a>] </td>
+                    </tr>
+                                        
+                    </table>
+                    <div class="th">
+                    	<div class="form">
+                        <input type='hidden' name='commit' value='1' />
+                        <input type='radio' name='action' value='del' />删除
+                        <input type='radio' name='action' value='update' checked />其他更改
+                        <input type="submit" value="保存" />&nbsp;
+                        &nbsp;
+                        </div>
+                    </div>
+                </div>
+
+				</form>
+            </div><!--/ con-->
+            
+            
+            
+            
+            
+        </div>    
+    </div><!--/ container-->
+
+</div><!--/ wrap-->
+
+<div id="js_search_msg" class="js_search_msg" style="display:none;"></div>
+<p style="text-align:center;padding:15px;color:#6B7355;
+font-family:Verdana;
+font-size:12px;">
+Powered by <a href="http://www.ylmf.com" target="_blank"> <b>雨林木风</b></a> &copy; 2009 <a href="http://www.114la.com" target="_blank"> <b>114la.com</b></A><a href="http://www.ylmf.com" target="_blank"></a>
+</p>
+</body>
+</html>
+<style type="text/css">
+	.js_search_msg{ position:absolute; background:#fff; border:1px solid #CEDEAE;}
+	.js_search_msg li{ padding:3px 5px; cursor:pointer;}
+	.js_search_msg li.active{ background:#EBF4D8}}
+</style>
+<script type="text/javascript" src="static/js/textboxdrop.js"></script>
+<script type="text/javascript">
+	$(document).ready(function(){
+		$(".admin-tb").find("input[rel='del']").each(function(i){
+			$(this).bind("click",function(){
+				$(".admin-tb").find("input[rel='del']").each(function(i){
+					var tr = $(this).parent().parent();
+					if(this.checked){
+						tr.addClass("checked");
+					}
+					else{
+						tr.removeClass("checked");
+					}
+				})
+				
+			})
+		});					   
+		
+		var t = new TextBoxDrop("tool_kw","js_search_msg");
+		t.SetEnterHandler (function(ele){
+			document.getElementById("classid").value = ele.getAttribute("rel");
+			
+			try{
+				selectOnChange(ele.getAttribute("rel"));
+			}catch(e){}
+		});
+		t.SetAjaxMethod($.get);
+		t.Url('?c=class&a=search&k=');
+		t.SetContentStyle(function(intput,contentbox){
+			var inputBox = $(intput);
+			if($.browser.ie){
+				contentbox.style.left = inputBox.offset().left;
+				contentbox.style.top = inputBox.offset().top + 23;
+			}
+			else{
+				$(contentbox).css({
+					top : inputBox.offset().top + 23,
+					left: inputBox.offset().left
+				});
+			}
+		});
+		t.DisplayContentHandler(function(input,contentbox){						   
+			if($(contentbox).width() < $(input).outerWidth()){
+				$(contentbox).width($(input).outerWidth());
+			}
+		});
+	});
+</script>

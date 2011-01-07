@@ -1,0 +1,64 @@
+/* ==========================================================
+	* Copyright (c) 2009, www.114la.com. All rights reserved.
+	* Date:2009/11/5
+	* Author: cai@115.com
+============================================================*/
+body { background:url(images/bg.png) repeat-x #C9DDEE; color:#0E6DBC}
+.theme a.blue{ background-position:-20px 0;}
+.bd,#board-menu li,#coolsite h2,#fmsite li ul { border-color:#B9D4E2;}
+a { color:#0E6DBC; text-decoration:none;}
+a:hover { color:#f00; text-decoration:underline;}
+#font-setting a.default { background-color:#0E6DBC; }
+#bg-item a.default { background-color:#3B84C3;}
+
+#header,#top,#board-menu li,#coolsite h2,#setting-box,#weatherBox,#weatherBox .head,.alertbox,
+.repeat { background-image:url(images/repeat.gif); background-repeat:repeat-x;}
+
+li.setSkin a,#search-menu li.current,#clalign,#closeClock ,
+a#smore ,.fmbox,.arrow,.button ,#setting-box h2,#weatherBox .close,
+.images { background-image:url(images/images.gif); background-repeat:no-repeat;}
+
+
+#clockBox em {color:#0E6DBC}
+h2,#board-menu a,#search-menu li.current a,.button,#weather a.red  { color:#07519A;}
+
+#top li.setSkin{ }
+#top li.setSkin a {height:21px; background-position:-1px 0; width:75px; overflow:hidden; text-indent:-9999px; margin-top:1px; display:block;}
+#header { background-position:0 -45px;}
+
+#search-menu li.current { background-position: center -124px;}
+#search-menu li.current a{ background-color:#D6E7F7;  border:1px solid #ace;  border-bottom-color:#DFEEF8;}
+#search-menu li a#smore { background-position:-118px -99px; background-color:#fff;}
+li #smp a:hover { background:#D6E7F7}
+
+
+#cate { background:url(images/sidebar.gif)}
+#cate a:hover { text-decoration:none; background-color:#07519A; color:#fff; }
+
+#board-menu li,#coolsite h2 { background-position:0 -137px;}
+#board-menu li.current { background-position:0 -179px;}
+
+#coolsite dt { border-right:1px solid #fff; color:#0E6DBC; font-weight:bold;}
+#coolsite dl.alt { border-bottom:1px solid #F3F9FF;background-color:#F3F9FF;}
+#coolsite dl:hover,#coolsite dl.iehover { background-color:#D8EDFF; border-color:#B6D4EE}
+#clalign.l { background-position:-17px -227px;}
+#clalign { background-position:-1px -227px;}
+
+#fmsite, .line_30 { background:url(images/topsite_bg.gif)}
+.arrow { width:8px; height:4px; overflow:hidden; text-indent:-999px; display:block; background-position: -1px  -104px; }
+#fmsite .arrow {top:-4px; position:absolute; right:11px}
+.fmbox { background-position:80px - 104px; background-color:#ccc;}
+
+
+#tool,#tool h2,#tool h2 span { border-color:#9AD97F;}
+#tool ul {background:url(images/tools_bg.gif) left top;}
+#tool a,#tool h2 { color:#178517;}
+#tool h2 {background-color:#EFF7E0; }
+
+#location li {background-color:#FFFEF4; border-color:#E5D7AF;}
+#location a, #location strong {color:#957824;}
+#location a:hover { background-color:#957824; color:#fff;}
+
+.button { background-position:-1px -49px;}
+#setting-box,.alertbox { background-color:#F1F5FC;}
+#setting-box h2 { background-position:-90px 0;}

@@ -1,0 +1,4 @@
+@charset "gb2312";
+#font-setting a.orange {width:16px; height:16px; margin-top:7px;}
+a { color:#BF6803;}
+#cate a:hover ,#location a:hover{ background-color:#FF8A04;}

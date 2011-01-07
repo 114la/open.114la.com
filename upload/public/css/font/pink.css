@@ -1,0 +1,4 @@
+@charset "gb2312";
+body,a { color:#D03570;}
+#cate h2,#tool-tab,.plane .int_b,.plane .int,#bm li,.tool-title a,#suggest .close a,#cal .date a { color:#D03570;}
+#cate a:hover ,#location a:hover{ background-color:#CB35A9;}
